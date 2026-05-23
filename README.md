@@ -1,5 +1,7 @@
 # miracle-focus-blur-plugin
 
+![Screenshot of miracle-focus-blur-plugin in action](screenshot.png)
+
 A [miracle-wm](https://github.com/mattkae/miracle-wm) plugin that blurs unfocused windows using a two-pass separable Gaussian blur shader.
 
 When a window loses focus it receives a horizontal-then-vertical Gaussian blur (radius 15px, sigma 5). When it regains focus the blur is removed. Attached (tiled) windows are unaffected.
