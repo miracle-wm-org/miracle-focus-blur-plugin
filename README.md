@@ -6,6 +6,23 @@ A [miracle-wm](https://github.com/mattkae/miracle-wm) plugin that blurs unfocuse
 
 When a window loses focus it receives a horizontal-then-vertical Gaussian blur (radius 15px, sigma 5). When it regains focus the blur is removed. Attached (tiled) windows are unaffected.
 
+## Installation
+
+Download and install the latest nightly build:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/miracle-wm-org/miracle-focus-blur-plugin/main/install.sh | bash
+```
+
+This places `miracle_focus_blur_plugin.wasm` in `$XDG_CONFIG_HOME/miracle-wm/plugins` (defaults to `~/.config/miracle-wm/plugins`).
+
+Then add it to your miracle-wm config (`~/.config/miracle-wm/config.yaml`):
+
+```yaml
+plugins:
+  - ~/.config/miracle-wm/plugins/miracle_focus_blur_plugin.wasm
+```
+
 ## Prerequisites
 
 - Rust toolchain (stable)
