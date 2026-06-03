@@ -33,7 +33,7 @@ cargo build --target wasm32-wasip1 --release
 
 The compiled plugin will be at `target/wasm32-wasip1/release/miracle_focus_blur_plugin.wasm`.
 
-## Usage in miracle-wm
+## Usage
 
 Add the plugin to your miracle-wm configuration file (`~/.config/miracle-wm/config.yaml`):
 
