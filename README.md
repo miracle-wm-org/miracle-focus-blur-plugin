@@ -13,27 +13,24 @@ Download and install the latest nightly build:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/miracle-wm-org/miracle-focus-blur-plugin/main/install.sh | bash
 ```
-```
 
-## Prerequisites
-
-- Rust toolchain (stable)
-
-## Build
-
-```sh
-cargo build --target wasm32-wasip1 --release
-```
-
-The compiled plugin will be at `target/wasm32-wasip1/release/miracle_focus_blur_plugin.wasm`.
-
-## Usage
-
-Add the plugin to your miracle-wm configuration file (`~/.config/miracle-wm/config.yaml`):
+Alternatively, manually add the plugin to your miracle-wm configuration file (`~/.config/miracle-wm/config.yaml`):
 
 ```yaml
 plugins:
   - /path/to/miracle-focus-blur-plugin/target/wasm32-wasip1/release/miracle_focus_blur_plugin.wasm
 ```
 
-Then reload the miracle-wm configuration for the plugin to take effect.
+## Building
+
+### Prerequisites
+```sh
+sudo apt-get install -y libmircore-dev clang libclang-dev
+rustup target add wasm32-wasip1
+```
+
+### Compilation
+```sh
+cargo build --target wasm32-wasip1 --release
+```
+The compiled WASM file can be found at `target/wasm32-wasip1/release/miracle_focus_blur_plugin.wasm`.
