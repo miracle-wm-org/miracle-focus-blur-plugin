@@ -14,9 +14,7 @@ Download and install the latest nightly build:
 curl -fsSL https://raw.githubusercontent.com/miracle-wm-org/miracle-focus-blur-plugin/main/install.sh | bash
 ```
 
-This places `miracle_focus_blur_plugin.wasm` in `$XDG_CONFIG_HOME/miracle-wm/plugins` (defaults to `~/.config/miracle-wm/plugins`).
-
-Then add it to your miracle-wm config (`~/.config/miracle-wm/config.yaml`):
+This places `miracle_focus_blur_plugin.wasm` in `$XDG_CONFIG_HOME/miracle-wm/plugins` (defaults to `~/.config/miracle-wm/plugins`), which will be automatically loaded by miracle-wm.
 
 ```yaml
 plugins:
