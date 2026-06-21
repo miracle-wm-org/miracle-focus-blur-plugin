@@ -8,10 +8,18 @@ When a window loses focus it receives a horizontal-then-vertical Gaussian blur (
 
 ## Installation
 
-Download and install the latest nightly build:
+Download and install the latest stable release:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/miracle-wm-org/focus-blur-plugin/main/install.sh | bash
+```
+
+### Nightly build (secondary)
+
+For the latest unreleased changes from `main`, install the nightly build instead:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/miracle-wm-org/focus-blur-plugin/main/install.sh | bash -s -- --nightly
 ```
 
 Alternatively, manually add the plugin to your miracle-wm configuration file (`~/.config/miracle-wm/config.yaml`):
