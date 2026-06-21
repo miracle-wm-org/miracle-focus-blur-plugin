@@ -1,5 +1,5 @@
 [package]
-name = "miracle-focus-blur-plugin"
+name = "focus-blur-plugin"
 version = "0.1.0"
 edition = "2021"
 

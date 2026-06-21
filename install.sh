@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="miracle-wm-org/miracle-focus-blur-plugin"
-WASM="miracle_focus_blur_plugin.wasm"
+REPO="miracle-wm-org/focus-blur-plugin"
+WASM="focus_blur_plugin.wasm"
 PLUGIN_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/miracle-wm/plugins"
 
 echo "Downloading latest $WASM..."

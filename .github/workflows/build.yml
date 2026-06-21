@@ -31,4 +31,4 @@ jobs:
           tag_name: nightly
           name: Nightly Build
           prerelease: true
-          files: target/wasm32-wasip1/release/miracle_focus_blur_plugin.wasm
+          files: target/wasm32-wasip1/release/focus_blur_plugin.wasm
